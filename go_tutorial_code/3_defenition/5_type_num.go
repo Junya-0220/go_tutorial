@@ -11,8 +11,14 @@ func main() {
 	)
 	fmt.Println(u8, i8, f32, c64)
 
+	//数値の扱いについて
+	//https://golang.org/ref/spec#Numeric_types
+
+	//Printfの扱いについて
+	//https://pkg.go.dev/fmt@go1.16.6
 	fmt.Printf("type=%T value=%v", u8, u8)
 
+	//四則演算
 	x := 1 + 1
 	fmt.Println(x)
 	fmt.Println(1+1, 2+2)
@@ -25,13 +31,17 @@ func main() {
 	fmt.Println("10 % 2 =", 10%2)
 	fmt.Println("10 % 3 =", 10%3)
 
+	//インクリメント、デクリメント
 	x = 0
 	fmt.Println(x)
+	// x = x + 1
 	x++
 	fmt.Println(x)
+	// x = x - 1
 	x--
 	fmt.Println(x)
 
+	//シフト演算
 	fmt.Println(1 << 0)
 	fmt.Println(1 << 1)
 	fmt.Println(1 << 2)
